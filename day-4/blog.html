@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     #navbar{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+       margin: auto;
+       position: sticky;
+       top: 00px;
+       background-color: white;
+    
+    }
+    #img2{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #bu1{
+        height: 31px;
+        cursor: pointer;
+        background-color: white;
+        border-color: red;
+        border-radius: 8px;
+        color: red;
+    }
+    #bu1:hover{
+        background-color: red;
+        cursor: pointer;
+        color: white;
+    }
+    #bu2{
+        background-color: red;
+        border-radius: 8px;
+        height: 31px;
+        border-color: red;
+        color: white;
+    }
+    #bu2:hover{
+        background-color: white;
+        cursor: pointer;
+        color: red;
+    }
+    img{
+        width: 100%;
+    }
+        #navbar2{
+            width: 70%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: auto;
+            position: sticky;
+            top: 50px;
+            background-color: white;
+        }
+        #navbar2>p{
+            color: grey;
+        }
+        #navbar2>p:hover{
+            cursor: pointer;
+        }
+        #top1{
+            width: 100%;
+            height: auto; 
+            display: flex;
+            align-items: center;
+            background-color: #3a609b;
+        }
+        #top11{
+            text-align: center;
+            margin: auto;
+            color: white;
+        }
+        #top11>img{
+            width:200px;
+        }
+        #top11>button{
+            width: 150px;
+            height: 35px;
+            border-radius: 5px;
+            background-color: #3a609b;
+            color: white;
+            border-color: white;
+            margin-bottom: 50px;
+            margin-top: 100px;
+        }
+        #top11>h4:hover{
+            cursor: text;
+        }
+        #top11>h1:hover{
+            cursor: text;
+        }
+        #top11>button:hover{
+            cursor: pointer;
+        }
+        #container{
+            width: 73%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: auto;
+            text-align: center;
+            
+        }
+        #container>div{
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #container>div>img{ 
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            
+        }
+        #container>div>h2{
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;    
+        }
+        #container>div:hover{
+            cursor: pointer;
+        }
+       
+    
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="img1">
+          <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/layout/header/logo.svg">    
+        </div>
+        <div id="img2">
+          <p>INTEGRATIONS</p>
+          <p>BLOG</p>
+          <p>FEATURES</p>
+          <button id="bu1">TRY IT FREE</button>
+          <button id="bu2">LOGIN</button>
+        </div>
+      </div>
+    <div id="navbar2">
+        <p>BLOG </p>
+        <p>PRODUCTIVITY </p>
+        <p>PRODUCTIVITY </p>
+        <p>BEST PRACTICES </p>
+        <p>RESOURCES</p>
+    </div>
+    <div id="top1">
+        <div id="top11">
+          <h4>TIMEKEEPING AND PRODUCTIVITY ARTICLES</h4>
+          <img src="https://trackingtime.co/wp-content/uploads/2022/09/Ilustraciones-Blog-Post-New-Image_240x146px-BlogPost-A-3.svg" alt="">
+          <h1>Introducing Our Fresh New Look and Roadmap</h1>
+          <button>READ ARTICLE</button>
+        </div>
+    </div>
+    <div id="container">
+
+    </div>
+</body>
+<script>
+    let data=[{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/Ilustraciones-Blog-Post-New-Image_240x146px-BlogPost-A-3.svg",
+        para:"Introducing Our Fresh New Look and Roadmap",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"Your Complete Guide to Employee Data Management",
+    },
+    {
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"How to Increase Business Productivity with Partner Onboarding Software",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"How to master your workweek: Project management software for individuals",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"5 Radical Habits of Highly Successful Remote Teams",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/08/Remote-Work-Productivity-Tricks-and-Tools.svg",
+        para:"The Remote Work Productivity Tricks and Tools You Need to Know",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"5 Best Ways to Reduce and Manage Overtime for Employees",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/07/digital-marketing-agency-tools.svg",
+        para:"Must-Have Digital Marketing Agency Tools in 2022",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/07/Solve-Your-Freelancing-Productivity-and-Budget-Problems.svg",
+        para:"How Time Tracking Can Solve Your Freelancing Productivity and Budget Problems",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/07/Time-tracking-and-ERP-system-1.svg",
+        para:"Benefits Of Integrating Time Tracking Software With Your Access Control System",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/06/Time-Management-Strategies-to-Boost-your-Teams-Efficiency.svg",
+        para:"10 Time Management Strategies to Boost Your Team,s Efficiency",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/05/Management-Practices-to-Improve-Employee-Productivity.svg",
+        para:"7 Best Management Practices to Improve Employee Productivity at Your Workplace",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/04/How-to-Streamline-Workflows-to-Skyrocket-Conversions.svg",
+        para:"How to Streamline Workflows to Skyrocket Conversions without Working Longer Hours?",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/04/Positive-Company-Culture-with-a-Remote-Team.svg",
+        para:"7 Ways to Build a Positive Company Culture with a Remote Team",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/04/hybrid-work-model.svg",
+        para:"Should Your Company Implement a Hybrid Work Model?",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/03/Awesome-_-Innovative-Work-Culture.svg",
+        para:"10 Ways to Build Your Company,s Awesome & Innovative Work Culture",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/03/Internal-Project-Workflow-Management.svg",
+        para:"Best Practices for Internal Project Workflow Management",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/02/Automated-accounts-receivable-functionalities.svg",
+        para:"Accounts Receivable Automation as a Time Saver for SMBs",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/02/Project-tracking.svg",
+        para:"Why Project Tracking Is Essential in Team Success",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/01/2021-mid-year.recap-1.svg",
+        para:"TrackingTime Product Updates: A Full Recap",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2021/11/Time-saving-techniques.svg",
+        para:"5 Alternative Time-Saving Techniques to Boost Productivity",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2021/11/Performance-improvement-plans.svg",
+        para:"How to Create Performance Improvement Plans for Remote Workers",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2021/11/timeline.svg",
+        para:"New in TrackingTime: Plan Your Projects with Timeline",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2021/10/Remote-and-Hybrid-Team-Productivity-Hacks-1.svg",
+        para:"Remote and Hybrid Team Productivity Hacks to Keep Your Projects On Track",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2021/09/2021-mid-year.recap_.svg",
+        para:"TrackingTime Product Updates: 2021 Recap",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2021/09/SEO-software-market-trends.svg",
+        para:"SEO Software Market Trends You Shouldn’t Ignore in 2021",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2021/08/Improve-time-management.svg",
+        para:"12 Effortless Ways to Improve Time Management Strategies",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/05/Actualizacion-Blog-Website_TaskLists.svg",
+        para:"Get a Clear Picture of What’s Getting Done: Project Management by TrackingTime",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2021/07/Remote-Work-Trends-01.svg",
+        para:"New Normal: Remote Work Trends to Watch Out in 2021 and Beyond",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2021/06/simple-free-productivity-tools.svg",
+        para:"Simple and Free Productivity Tools for Business Teams",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2021/05/customer-experience.svg",
+        para:"6 Customer Experience Trends to Watch Out for in 2021",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2017/12/productivity-software-to-survive-digital-economy.svg",
+        para:"3 Creative Hacks to Boost Employee Performance",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2021/04/Integrations-2021.svg",
+        para:"How to Get the Most Out of TrackingTime Integrations with 2021’s Top Project Management Tools",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2021/03/AdobeSalesforceMarketo.svg",
+        para:"The Big Marketing Clouds at a Glance: Adobe, Salesforce, Marketo and More",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2021/03/MarketingAutomationToolsToTry2021.svg",
+        para:"Marketing Automation Tools to Try in 2021",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2021/02/HowToIncreaseProductivityAndImproveBillingWithTT-1.svg",
+        para:"How to Increase Productivity and Improve Billing with Time Tracking",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2021/02/SharedReports.svg",
+        para:"How to Display Your Time Reports with High Visual Impact Using Shared Reports",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2021/01/IncreaseYourTeamsEfficiency-IncreaseYourTeamsEfficiency.svg",
+        para:"Increase Your Team’s Efficiency with Time Estimates, Planning, Time Cards, and More",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/12/TimeTrackingForBetterWriting.svg",
+        para:"Time Tracking Tips for Better Writing",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/12/TheBestDeploymentTools.svg",
+        para:"Best Deployment Tools for Agile Software Teams",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/09/Kanban-3.svg",
+        para:"How to Use a Kanban Board to Successfully Manage Your Tasks and Projects",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/10/5effectivetipsonrunningasuccesfullbusinesswithremoteemployees.svg",
+        para:"5 Effective Tips on Running a Successful Business with Remote Employees",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/10/bestpracticesfordataquality-2.svg",
+        para:"Best Practices for Better Data Quality in Business Intelligence",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/10/Discoverthebestonlinetoolsforeffectivecustomercommunication-1.svg",
+        para:"Discover the Best Online Tools for Effective Customer Communication on Sales, Marketing, and Support",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"Google Workspace Is the New Solution for Team Collaboration",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/09/4ModernHRSolutions.svg",
+        para:"4 Modern HR Solutions for Businesses and SMBs",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/10/HelpDeskSoftware-1.svg",
+        para:"Help Desk Software for Every Business Requirement to Keep Happy Customers",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/08/timetrackig-must-1.svg",
+        para:"Why a Time Tracker Is a Must for the Gig Economy",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/07/DE-Fu%CC%88r-Freelancer-and-KMU.svg",
+        para:"Accounting Software for Freelancers and SMBs",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"Time Keeping Increases the Chances of Success for Your Projects",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/07/ES-Reportes-profesionales-para-tu-negocio.svg",
+        para:"Professional Reports for Your Business",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/07/DE-Moderne-Business-Intelligence.svg",
+        para:"The Best Solutions for Business Intelligence That You Cannot Miss",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/07/DE-Die-Zukunft-der-Arbeit-Wie.svg",
+        para:"Automation, Machine Learning, AI and the Future of Work",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/07/Productivity-and-collaboration-in-the-digital-workspace.svg",
+        para:"Improve Productivity in the Digital Workplace",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/07/Team-communication-tips-and-tricks-for-internationl-projects.svg",
+        para:"Team Communication for Successful International Projects",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/07/TrackingTime-for-Microsoft-Teams.svg",
+        para:"Easy Timekeeping for Microsoft Teams",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/07/home-office-the-best-tools-for-remote-work.svg",
+        para:"The Best Tools for Remote Work to Avoid Procrastination",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"Desktop App: The New Solution of TrackingTime",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/07/Home-office-and-remote-working-solutions-for-team-collaboration.svg",
+        para:"Working Remotely: Collaboration Tools for Teams",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"What,s New on TrackingTime?",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/07/DE-Die-Zukunft-der-Arbeit-Wie.svg",
+        para:"How Time Batching Can Increase Productivity in 4 Easy Steps",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2019/12/StartUps.svg",
+        para:"Startups Looking to Redesign the Future of Work",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"How a Pharmaceutical Consulting Company Improves Project Budget and Billing",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"How to Switch from Toggl to TrackingTime",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/07/DE-Marktu%CC%88bersicht-Professional.svg",
+        para:"Planning and Time Tracking to Succeed with Your Projects",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/07/Time-tracking-for-your-digital-agency.svg",
+        para:"Time Tracking for Your Digital Agency",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"Easy Time Tracking for Agile Business Teams",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"Crowe Global Improves Productivity to Delight Customers",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2019/06/9-benefits-of-using-time-cards-2.svg",
+        para:"9 Benefits of Using Time Cards",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/07/time-and-attendance-tracking-now-mandatory-in-spain.svg",
+        para:"Time and Attendance Tracking Now Mandatory in Spain",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2017/12/Manage-work-time-01.svg",
+        para:"Manage Your Time to Get That Job Done",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2017/12/productivity-software-to-survive-digital-economy-1.svg",
+        para:"Productivity Software to Survive the Digital Economy"
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2017/12/Reach-your-full-potential.svg",
+        para:"Time Schedule: 4 Easy Steps to Reach Your Full Potential",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2020/12/TheBestDeploymentTools.svg",
+        para:"The Best Solutions for Business Intelligence That You Cannot Miss"
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2016/10/Innovative-apps.svg",
+        para:"Innovative Apps for the Future of Work",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"TrackingTime Slack Bot Is Here! Yay!",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2016/05/Actualizacion-Blog-Website_Extension.svg",
+        para:"Introducing the TrackingTime Button: Track Your Time in Basecamp, Asana, Trello and More!",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2015/04/what-are-you-saying-no-to.svg",
+        para:"What are you saying No to?",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"How can time management tips help you lose weight",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"Want to Be Really Productive? Eat a Live Frog First Thing in the Morning!",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2015/01/feared-to-do-list.svg",
+        para:"The (Feared) To Do List",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"Seize the Morning Time… or Not",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"Two Fundamentals about New Year’s Resolutions",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"Billable vs. Non-Billable Hours",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2022/09/generico-new.svg",
+        para:"The Best Morning Routine to Boost Productivity",
+    },{
+        imgg:"https://trackingtime.co/wp-content/uploads/2013/12/Manage-To-Do-List.svg",
+        para:"Divide et Impera: 3 Proven Strategies to Effectively Manage Your To-do List",
+    },
+    ];
+    data.forEach(function(el){
+        let box=document.createElement("div")
+        let img=document.createElement("img");
+        img.src=el.imgg;
+        let pa=document.createElement("h2")
+        pa.innerText=el.para;
+        box.append(img,pa);
+        document.querySelector("#container").append(box);
+
+    });
+</script>
+</html>
