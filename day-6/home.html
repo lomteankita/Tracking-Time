@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #navbar{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+       margin: auto;
+    
+    }
+    #img2{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #bu1{
+        height: 31px;
+        cursor: pointer;
+        background-color: white;
+        border-color: red;
+        border-radius: 8px;
+        color: red;
+    }
+    #bu1:hover{
+        background-color: red;
+        cursor: pointer;
+        color: white;
+    }
+    #bu2{
+        background-color: red;
+        border-radius: 8px;
+        height: 31px;
+        border-color: red;
+        color: white;
+    }
+    #bu2:hover{
+        background-color: white;
+        cursor: pointer;
+        color: red;
+    }
+    #top1{
+        width: 70%;
+        height: auto;
+        text-align: center;
+        margin: auto; 
+        padding-top: 10px;
+        
+    }
+    #top1>p{
+        color: red;
+
+    }
+    #top1>h1{
+         font-size: 100px;
+         margin-top: 1px;
+         margin-bottom: 4px;
+    }
+    #top1>button:hover{
+        cursor: pointer;
+        background-color: blue;
+        border-color: blue;
+    }
+    #top1>button{
+        background-color: red;
+        border-radius: 8px;
+        height: 31px;
+        border-color: grey;
+        color: white;
+    }
+    #top1>input{
+        height: 25px ;
+        text-align: center;
+       
+    }
+    #top2{
+        width: 90%;
+        height: auto;
+        text-align: center;
+        margin: auto;
+        padding-top: 55px;
+    }
+    img{
+        width: 100%;
+    }
+    #line{
+        text-align: center;
+    }
+    #mi1{
+        height: auto;
+        width: 90%;
+        display: flex;
+        margin: auto;
+    }
+    #mi1>div{
+        width: 30%;
+        text-align: center;
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+    #footer{
+            width: 90%;
+            display: flex;
+            padding-top: 55px;
+            margin: auto;
+            padding-bottom: 55px;
+        }
+        #footer>div{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin: auto;
+            gap: 1px;}
+    
+</style>
+
+<body>
+    <div id="navbar">
+      <div id="img1">
+        <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/layout/header/logo.svg" alt="">    
+      </div>
+      <div id="img2">
+        <p>INTEGRATIONS</p>
+        <p>BLOG</p>
+        <p>FEATURES</p>
+        <button id="bu1">TRY IT FREE</button>
+        <button id="bu2">LOGIN</button>
+      </div>
+    </div>
+    
+    <div id="top1">
+       <p>TRACKINGTIME TIME TRACKER SOFTWARE</p>
+      <h2>SET AND FORGET TIME TRACKING</h2>
+      <h1>Bring your productivity to the next level.</h1>
+      <input type="text" placeholder="Your Work Email">
+      <button id="b1">START FOR FREE</button>
+    </div>
+    <div id="top2">
+    <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?approval_prompt=force&client_id=438303160091-2v96mru5mn075n2foabpddbne5ais5ik.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fapp.trackingtime.co%2Fv4%2Fgoogle%2Fsignin%2Fcallback&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&state=google--871109000&flowName=GeneralOAuthFlow"> Sign in with Google</a>
+    <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/layout/header/ilus-header-2.svg" alt="">
+    </div>
+    <h2 id="line">THE FEATURES YOUR PROJECT MANAGEMENT APP IS MISSING.</h2>
+    <div id="mi1">
+        <div>
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/keywords/article-1.svg" alt="">
+            <h3>Measure your team’s productivity</h3>
+            <p>Get a record of the worked hours and keep your projects in order, be abreast of ongoing or completed projects with our super friendly app.</p>    
+        </div>
+        <div>
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/keywords/article-2.svg" alt="">
+            <h3>The most flexible reporting engine</h3>
+            <p>Project budgeting, client billing, payroll, productivity analytics and much more: No matter what kind of reports you need, TrackingTime has got you covered.</p>
+        </div>
+        <div>
+            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v5/img/keywords/article-3.svg" alt="">
+            <h3>Monitor your team's workload, in real time</h3>
+            <p>See every work in progress and measure the productivity of your team by monitoring them in real time</p>
+        </div>
+
+    </div>
+    <div id="footer">
+        <div>
+            <h3>Industries</h3>
+            <a href="https://trackingtime.co/industry/time-tracking-for-graphic-designers">Time tracking for Graphic Designers</a>
+            <a href="https://trackingtime.co/industry/time-tracking-software-for-architects">Time tracking software for Architects</a>
+            <a href="https://trackingtime.co/industry/time-tracking-for-remote-workers">Time tracking for Remote Workers</a>
+            <a href="https://trackingtime.co/industry/time-tracking-for-marketing-teams">Time tracking for Marketing Teams</a>
+            <a href="https://trackingtime.co/industry/time-tracking-for-freelancers">Time tracking for Freelancers</a>
+        </div>
+        <div>
+            <h3>Product</h3>
+            <a href="https://trackingtime.co/pricing">Plans & Pricing</a>
+            <a href="https://trackingtime.co/integrations">Integrations</a>
+            <a href="https://trackingtime.co/product-updates">Product Updates</a>
+            <a href="https://trackingtime.co/slack">Slack Bot</a>
+            <a href="https://trackingtime.co/time-tracking-for-microsoft-teams">Microsoft Teams</a>
+        </div>
+        <div>
+            <h3>Features</h3>
+            <a href="https://trackingtime.co/features/online-timesheet">Online Timesheet For Efficient Companies</a>
+            <a href="https://trackingtime.co/features/time-tracker">Time Tracker for every business</a>
+            <a href="https://trackingtime.co/features/billing-and-payroll-reports">Reports for billing and payroll to reduce administrative work</a>
+            <a href="https://trackingtime.co/features/attendance-tracker">Attendance tracker for every business</a>
+            <a href="https://trackingtime.co/features/project-management">Project Management Time Tracking Software</a>
+        </div>
+        <div>
+            <h3>Apps</h3>
+            <a href="https://pro.trackingtime.co/#">Web app</a>
+            <a href="https://trackingtime.co/iphone-app">iPhone </a>
+            <a href="https://trackingtime.co/android-app">Android app</a>
+            <a href="https://chrome.google.com/webstore/detail/tracking-time-time-tracke/fglmkdhomaklnckgbjfnfmbfmlkjippg">Time Tracking for Chrome</a>
+            <a href="https://addons.mozilla.org/en-US/firefox/addon/time-tracking-button/">Time Tracking for Firefox</a>
+        </div>
+
+    </div>
+</body>
+<script>
+    document.getElementById("b1").addEventListener("click", start);
+        function start(){
+            console.log("ankita")
+       }
+    </script>
+</html>
